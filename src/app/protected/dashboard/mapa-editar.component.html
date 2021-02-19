@@ -1,0 +1,16 @@
+<form [formGroup]="forma">
+
+    <mat-form-field>
+        <input matInput placeholder="descripcion" formControlName="desc">
+    </mat-form-field>
+
+
+    <mat-form-field>
+        <textarea rows="3" type="number" matInput placeholder="latitud" formControlName="lat"></textarea>
+    </mat-form-field>
+    <mat-form-field>
+        <textarea rows="3" type="number" matInput placeholder="longitud" formControlName="lng"></textarea>
+    </mat-form-field>
+    <button (click)="guardarCambios()" mat-raised-button color="primary">Editar</button>
+    <button (click)="onNoClick()" mat-raised-button color="warn">Cancelar</button>
+</form>
